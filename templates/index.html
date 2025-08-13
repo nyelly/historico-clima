@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clima por Cidade</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Consulta de Clima</h1>
+    <div class="input-group">
+      <input type="text" id="cidade" placeholder="Digite a cidade" />
+      <button id="btnBuscar">Buscar</button>
+      <button id="btnHistorico">Ver Histórico</button>
+    </div>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
